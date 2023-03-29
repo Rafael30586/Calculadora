@@ -14,7 +14,7 @@ public class Pantalla extends JLabel implements ActionListener {
         this.numeros = numeros;
         this.setText(numeros);
         this.setFont(fuentePantalla);
-        //this.setHorizontalAlignment();
+        this.setHorizontalAlignment(SwingConstants.RIGHT);
     }
 
     @Override
