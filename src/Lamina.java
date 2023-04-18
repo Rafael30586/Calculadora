@@ -776,7 +776,10 @@ public class Lamina extends JPanel implements ActionListener {
             else if(operacion=='d'){
                 if(((int)(primerNumero/segundoNumero))==(primerNumero/segundoNumero)){
                     pantalla.setText(String.valueOf((int)(primerNumero/segundoNumero)));
-                }else{
+                }else if(segundoNumero==0){
+                    pantalla.setText("error");
+                }
+                else{
                     pantalla.setText(String.valueOf(primerNumero/segundoNumero));
                 }
             }
