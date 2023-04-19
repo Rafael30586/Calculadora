@@ -778,6 +778,7 @@ public class Lamina extends JPanel implements ActionListener {
                     pantalla.setText(String.valueOf((int)(primerNumero/segundoNumero)));
                 }else if(segundoNumero==0){
                     pantalla.setText("error");
+                    JOptionPane.showMessageDialog(null,"No se puede dividir por cero");
                 }
                 else{
                     pantalla.setText(String.valueOf(primerNumero/segundoNumero));
