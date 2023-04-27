@@ -707,7 +707,7 @@ public class Lamina extends JPanel implements ActionListener {
             hayPunto = true;
             resultado = false;
         }
-        else if((fuenteEvento==botonSuma)&&(operador==false)){
+        else if((fuenteEvento==botonSuma)&&(operador==false)){ // ¿agregar  && resultado false?
             primerNumero = Double.parseDouble(numeros);
             miniPantalla.setText(numeros+"+");
             numeros = "0";
@@ -719,7 +719,7 @@ public class Lamina extends JPanel implements ActionListener {
             hayNumeros = false;
             //System.out.println(primerNumero);
         }
-        else if((fuenteEvento==botonResta)&&(operador==false)){
+        else if((fuenteEvento==botonResta)&&(operador==false)){ //¿agregar  && resultado false?
             primerNumero = Double.parseDouble(numeros);
             miniPantalla.setText(numeros+"-");
             numeros = "0";
@@ -729,7 +729,7 @@ public class Lamina extends JPanel implements ActionListener {
             hayPunto = false;
             hayNumeros = false;
         }
-        else if((fuenteEvento==botonProducto)&&(operador==false)){
+        else if((fuenteEvento==botonProducto)&&(operador==false)){ //¿agregar  && resultado false?
             primerNumero = Double.parseDouble(numeros);
             miniPantalla.setText(numeros+"x");
             numeros = "0";
@@ -739,7 +739,7 @@ public class Lamina extends JPanel implements ActionListener {
             hayPunto = false;
             hayNumeros = false;
         }
-        else if((fuenteEvento==botonCociente)&&(operador==false)){
+        else if((fuenteEvento==botonCociente)&&(operador==false)){ //¿agregar  && resultado false?
             primerNumero = Double.parseDouble(numeros);
             miniPantalla.setText(numeros+"/");
             numeros = "0";
